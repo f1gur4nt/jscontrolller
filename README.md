@@ -11,7 +11,7 @@ Voce precisa criar uma conta no ideone e colocar seu username, senha e link no a
 
 Após isso, abra o arquivo config.json que estará assim:
 
-{"username":"<usuario>","password":"<senha>","link":"<ideone link>"}
+{"username":"","password":"","link":""}
   
 e subistitua os parametros para as informações da sua conta. ex:
   
