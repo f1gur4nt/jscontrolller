@@ -7,6 +7,7 @@ import asyncio
 import threading
 import click
 import pyperclip
+import base64
 from urllib.parse import urlparse
 from requests import get,post
 
@@ -21,7 +22,7 @@ link = config_json["link"]
 
 def ideone_login():
   try:
-    dt = {'username':user,'password':passwd,'remember':'yes','next':'L29EOXp1Yw=='}
+    dt = {'username':user,'password':passwd,'remember':'yes','next':base64.b64encode("/".encode("ascii")+link.encode("ascii")).decode("ascii")}
     head = {"User-Agent":"Mozilla/5.0"}
     res = post(url="https://ideone.com/account/login",headers=head,data=dt,allow_redirects=False)
     if res.status_code != 302:
