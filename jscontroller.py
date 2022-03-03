@@ -12,7 +12,7 @@ from requests import get,post
 
 stopFlag = False
 
-config_path = ".config.json"
+config_path = "config.json"
 config_json = eval(open(config_path,"r").read())
 
 user = config_json["username"]
