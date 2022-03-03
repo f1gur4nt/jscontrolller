@@ -29,7 +29,7 @@ depois, abra mais outro terminal e execute o jscontroller.py.
   
 Se tudo der certo, aparecerá isso:
   
-[*] Editing ideone url ...
+[*] Editing ideone url ...<br>
 [+] Ideone edited as success. jscontroller clients will connect soo.
   
   
